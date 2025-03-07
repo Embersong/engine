@@ -1,0 +1,18 @@
+{
+    "version": "1.0",
+    "name": "ember/engine",
+    "autoload": {
+        "files": [
+            "core/render.php",
+            "core/functions.php",
+            "core/controller.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "ember",
+            "email": "evebay@mail.ru"
+        }
+    ],
+    "require": {}
+}

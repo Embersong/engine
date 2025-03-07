@@ -10,8 +10,8 @@
 <a href="/">Главная</a>
 <a href="/posts">Посты</a><br>
 
-<div class="content">
-    Главная
+<div class="container mt-5">
+    Добро пожаловать в блог!
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

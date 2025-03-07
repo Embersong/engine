@@ -1,8 +1,10 @@
 <?php
 
 //render('posts');
-function render($page)
+function render($page, $data = [])
 {
+    extract($data);
+
     $fileName = __DIR__ . '/../views/' . $page . '.php';
 
     if (file_exists($fileName)) {

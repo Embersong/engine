@@ -7,4 +7,5 @@ $url_array = explode('/', $_SERVER['REQUEST_URI']);
 
 $page = $url_array[1] ?: 'index';
 
-render($page);
+main($page);
+

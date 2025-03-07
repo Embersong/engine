@@ -5,5 +5,11 @@ function render($page)
 {
     $fileName = __DIR__ . '/../views/' . $page . '.php';
 
-    include $fileName;
+    if (file_exists($fileName)) {
+        include $fileName;
+    } else {
+        include __DIR__ . '/../views/404.html';
+    }
+
+
 }

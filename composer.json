@@ -5,6 +5,7 @@
         "files": [
             "core/render.php",
             "core/functions.php",
+            "models/posts.php",
             "core/controller.php"
         ]
     },

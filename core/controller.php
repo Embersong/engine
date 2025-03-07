@@ -1,18 +1,25 @@
 <?php
 
-function main($page)
+function main($page, $id)
 {
-    $data = [];
+
     switch ($page) {
         case 'index':
             render($page);
             break;
 
+        case 'post':
+            $post = getPost($id);
+
+            render('posts/show', [
+                'post' => $post
+            ]);
+            break;
 
         case 'posts':
             $posts = getAllPosts();
 
-            render($page, [
+            render('posts/index', [
                 'posts' => $posts
             ]);
             break;
